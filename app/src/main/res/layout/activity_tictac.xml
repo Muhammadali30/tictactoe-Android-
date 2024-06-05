@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/backgroud"
+    tools:context=".tictac">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textSize="30sp"/>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_margin="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:onClick="check"
+            />
+        <Button
+            android:id="@+id/b2"
+            android:layout_margin="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:onClick="check"
+            />
+        <Button
+            android:id="@+id/b3"
+            android:layout_margin="10dp"
+            android:onClick="check"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_height="100dp"
+            android:layout_width="100dp"/>
+        <Button
+            android:id="@+id/b4"
+            android:layout_margin="10dp"
+            android:onClick="check"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_height="100dp"
+            android:layout_width="100dp"/>
+        <Button
+            android:id="@+id/b5"
+            android:layout_margin="10dp"
+            android:onClick="check"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_height="100dp"
+            android:layout_width="100dp"/>
+        <Button
+            android:id="@+id/b6"
+            android:layout_margin="10dp"
+            android:onClick="check"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_height="100dp"
+            android:layout_width="100dp"/>
+        <Button
+            android:id="@+id/b7"
+            android:layout_margin="10dp"
+            android:onClick="check"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_height="100dp"
+            android:layout_width="100dp"/>
+        <Button
+            android:id="@+id/b8"
+            android:layout_margin="10dp"
+            android:onClick="check"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_height="100dp"
+            android:layout_width="100dp"/>
+        <Button
+            android:id="@+id/b9"
+            android:layout_margin="10dp"
+            android:layout_height="100dp"
+            android:onClick="check"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_width="100dp"/>
+
+
+
+    </GridLayout>
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        />
+
+</LinearLayout>

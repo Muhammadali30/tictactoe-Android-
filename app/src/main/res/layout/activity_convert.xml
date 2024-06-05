@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert Temp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tempheading"/>
+    <EditText
+        android:layout_below="@+id/tempheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Value to Convert"
+        android:padding="18dp"
+        android:inputType="number"
+        android:id="@+id/temval"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner"
+        android:id="@+id/convert"
+        android:padding="18dp"
+        android:layout_below="@+id/temval"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/convert"
+        android:text="="
+        android:id="@+id/ans"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ans"
+        android:text="Convert"
+        android:id="@+id/equal"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
